@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "photoguide-tmp",
-    "slug": "photoguide-tmp",
+    "name": "Photo guide",
+    "slug": "photoguide",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
@@ -20,6 +20,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "The photo guide uses the camera to photograph the car.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-screen-orientation"
+    ]
   }
 }
